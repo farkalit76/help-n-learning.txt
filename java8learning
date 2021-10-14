@@ -1,0 +1,14 @@
+
+1. Java Function programming::
+  Function -> A function that accept one parameter and produces one result.
+  BiFunction -> A function that accept TWO parameters and produces one result.
+  Consumer ->An operation that accepts a single input argument and returns no result.
+  BiConsumer -> An operation that accepts TWO inputs argument and returns no result.
+  Predicate -> Accept one parameter and return boolean result.
+  BiPredicate ->Accept TWO parameters and return boolean result.
+  Supplier -> Just represents a supplier of results (it takes no input).
+  Optional -> A container object which may or may not contain a non-null value.
+              If contains then return, otherwise handle the else part.
+
+2. Java List, Map Streaming coding::
+3. Java Annotation::

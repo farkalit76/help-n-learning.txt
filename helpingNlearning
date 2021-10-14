@@ -1,0 +1,21 @@
+
+Application fine tunes like heap dump, memory usage, memory leakage etc
+------------------------------------------------------------------------
+help: https://www.baeldung.com/java-heap-dump-capture
+help: https://www.betsol.com/blog/java-memory-management-for-java-virtual-machine-jvm/
+
+1. To get PID:
+SpringApplication springApplication = new SpringApplication(MyApplication.class);
+springApplication.run(args);
+log.info(new ApplicationPid().toString());
+
+1. farkalitusman@C02D9F13MD6M payments-service % jmap -dump:live,format=b,file=tmp/payemnt-selector.txt 40206
+2. farkalitusman@C02D9F13MD6M payments-service % jcmd 40206 GC.heap_dump tmp/jcmd-dump.hprof
+3. farkalitusman@C02D9F13MD6M payments-service % jstat -gc 45854
+3. VisulaVM -> To visualize the heap dump files and status.
+OR to visulaize in Statical diagram use the following online tool. Just upload the heap dum file here and analyze it.
+4. Heap Hero: https://heaphero.io/
+
+
+JDK Home:
+/Applications/SpringToolSuite4.app/Contents/Eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_14.0.2.v20200815-0932
